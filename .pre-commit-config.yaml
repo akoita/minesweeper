@@ -9,11 +9,6 @@ repos:
     -   id: check-added-large-files # Checks that no large files (>500kb by default) have been committed.
 -   repo: local
     hooks:
-    -   id: coucou!!!!!!!
-        name: coucou!!!!!!!
-        entry: echo "coucou!!!!!!!"
-        types: [text]
-        language: system
     -   id: nbstripout
         name: Strip Jupyter notebook output (nbstripout)
         entry: poetry run python -m nbstripout
@@ -25,3 +20,9 @@ repos:
         entry: poetry run codespell markdown
         types: [ markdown ]
         language: system
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.3.3
+    hooks:
+    -   id: ruff
+        args: [--fix]
+    -   id: ruff-format
