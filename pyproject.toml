@@ -1,0 +1,38 @@
+[project]
+name = "minesweeper"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Aboubakar Koita",email = "makalou.bouba@pm.me"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<=3.12"
+dependencies = [
+    "loguru (>=0.7.3,<0.8.0)"
+]
+
+[tool.poetry]
+packages = [{include = "minesweeper", from = "src"}]
+
+[tool.ruff]
+exclude = ["bin/","guidelines/", "notebooks/", "tests/", "validation_tests/"]
+
+
+[tool.ruff.lint]
+select = ["I", "S", "E", "N", "F", "T20", "ANN", "ARG"]
+extend-select = ["S113", "N803", "N806"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google" # The type of docstring style to follow. Will be elaborated on in the module about docstrings.
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.5"
+black = "^25.1.0"
+isort = "^6.0.1"
+bandit = "^1.8.3"
+ruff = "^0.9.10"
+pre-commit = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
