@@ -27,15 +27,18 @@ class Minesweeper:
         Any adjacent cells with no mines are also revealed.
         Returns "Game Over" if a mine is revealed, "Continue" otherwise.
         """
-        pass
+        if (row, col) in self.mines:
+            return "Game Over"
+        self.revealed.add((row, col))
+        return "Continue"
 
     def get_board(self: "Minesweeper") -> list:
         """Return the current state of the board."""
-        pass
+        return self.board
 
     def is_winner(self: "Minesweeper") -> bool:
         """Check if the game has been won."""
-        pass
+        return len(self.revealed) == self.rows * self.cols - self.num_mines
 
     def restart(self: "Minesweeper") -> None:
         """Restart the game with the same parameters."""
