@@ -1,10 +1,37 @@
-# Editable Git install with no remote (akoita-toolkit==0.1.0)
-certifi==2025.1.31
-charset-normalizer==3.4.1
-click==8.1.8
-idna==3.10
-loguru==0.7.3
-numpy==2.2.3
-requests==2.32.3
-ruff==0.9.10
-urllib3==2.3.0
+astroid==3.3.9 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+bandit==1.8.3 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+black==25.1.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+cfgv==3.4.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+click==8.1.8 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+codespell==2.4.1 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+colorama==0.4.6 ; python_version >= "3.10" and python_full_version <= "3.12.0" and (sys_platform == "win32" or platform_system == "Windows")
+dill==0.3.9 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+distlib==0.3.9 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+exceptiongroup==1.2.2 ; python_version == "3.10"
+filelock==3.17.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+identify==2.6.9 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+iniconfig==2.0.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+isort==6.0.1 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+markdown-it-py==3.0.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+mccabe==0.7.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+mdurl==0.1.2 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+mypy-extensions==1.0.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+nodeenv==1.9.1 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+packaging==24.2 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pathspec==0.12.1 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pbr==6.1.1 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+platformdirs==4.3.6 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pluggy==1.5.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pre-commit==4.1.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pygments==2.19.1 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pylint==3.3.5 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pytest==8.3.5 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+pyyaml==6.0.2 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+rich==13.9.4 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+ruff==0.9.10 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+setuptools==76.0.0 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+stevedore==5.4.1 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+tomli==2.2.1 ; python_version == "3.10"
+tomlkit==0.13.2 ; python_version >= "3.10" and python_full_version <= "3.12.0"
+typing-extensions==4.12.2 ; python_version == "3.10"
+virtualenv==20.29.3 ; python_version >= "3.10" and python_full_version <= "3.12.0"
