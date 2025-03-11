@@ -1,4 +1,3 @@
-import pytest
 import minesweeper
 
 def test_minesweeper():

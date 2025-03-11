@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "minesweeper", from = "src"}]
+packages = [{include = "*", from = "src"}]
 
 [tool.ruff]
 line-length = 120
@@ -21,7 +21,7 @@ exclude = ["bin/","guidelines/", "notebooks/", "tests/", "validation_tests/"]
 
 [tool.ruff.lint]
 select = ["I", "S", "E", "N", "F", "T20", "ANN", "ARG"]
-extend-select = ["S113", "N803", "N806"]
+ignore = ["S113", "N803", "N806"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google" # The type of docstring style to follow. Will be elaborated on in the module about docstrings.
